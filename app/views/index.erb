@@ -1,0 +1,52 @@
+
+<div class="container">
+
+	<div class="row header text-center">
+		<h1>C<small>reating</small> A<small>mazing</small> T<small>eams</small></h1>
+	</div>
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="jumbotron main member">
+				<a href="/member">
+					<p class="jumbotron inner index text-center">Members</p>	
+				</a>	  
+			</div>		
+		</div>
+		<div class="col-md-2"></div>		
+	</div>	
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="jumbotron main project">
+				<a href="/project">
+					<p class="jumbotron inner index text-center">Project</p>	
+				</a>	  
+			</div>		
+		</div>
+		<div class="col-md-2"></div>		
+	</div>		
+</div>
+
+
+<h1>CAT</h1>
+<a href="/member/list">All members</a>
+
+
+<div class= "search-form">
+	<form action="/member/search" method="get">
+	 <input type="text" name="name" placeholder="insert here the name your looking for">
+	 <button type="submit">Search</button>
+	</form>
+</div>
+
+
+<div class="form-group has-error">
+  <label class="control-label" for="inputError1"><%= flash[:error] %></label>
+  
+</div>
+
+<a href="/member/index">Member index</a>
+<a href="/project/index">Project index</a>
+
+
